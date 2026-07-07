@@ -1,0 +1,4 @@
+(fp_lib_table
+	(version 7)
+	(lib (name "ARM_LIBRARY_FOOT") (type "KiCad") (uri "${KIPRJMOD}/ARM_LIBRARY_FOOT.pretty") (options "") (descr ""))
+)
