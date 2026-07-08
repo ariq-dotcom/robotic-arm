@@ -6,7 +6,7 @@
 #define pindemo 9 // mode demonstrasi (beberapa gerakan kemampuan robot)
 
 //sensor
-#define sensor 8 // megaatmega2560/ sensor untuk mode kerja (belum tau sensor apa)
+#define sensor 8 // megaatmega2560/ sensor untuk mode kerja (belum ditentukan sensor apa)
 
 
 //AAAAAAAAAAAAASSSSSSSSSSSSSSSSSSSSSSNNNNNNNNNNNNNNGGGGGGGGGGGGGWWWWWWWWWWWWWWWWW
