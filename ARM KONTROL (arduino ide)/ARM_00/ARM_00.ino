@@ -4,7 +4,7 @@
 #define pindemo 8 // mode demonstrasi (beberapa gerakan kemampuan robot)
 
 //*****
-#define sensor 7 // sensor untuk mode kerja (belum ditentukan sensor apa)
+#define sensor 7 // sensor untuk mode kerja (belum ditentukan pakai sensor apa)
 //*****
 
 //nama servo
