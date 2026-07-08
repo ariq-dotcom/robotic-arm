@@ -5,7 +5,7 @@
 #define pinwork 12 // mode kerja
 #define pindemo 8 // mode demonstrasi (beberapa gerakan kemampuan robot)
 //sensor
-#define sensor 11 //sensor untuk mode kerja (belum tau sensor apa)
+#define sensor 11 //sensor untuk mode kerja (belum ditentukan pakai sensor apa)
 //nama servo
 Servo base;
 Servo shoulder;
