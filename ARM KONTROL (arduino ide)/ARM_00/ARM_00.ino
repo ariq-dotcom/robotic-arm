@@ -76,9 +76,6 @@ void loop() {
   // ==== MAPPING & PEMBATAS ====
   // belum
 
-  // kayane sih sensor taruh sini ya
-  // habis mapping
-  // sensor apa sih ya?
 
   // ===== KONTROL SERVO =====
   // sementara 90 semua
