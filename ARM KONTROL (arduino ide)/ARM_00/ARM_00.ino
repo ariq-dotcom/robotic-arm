@@ -1,3 +1,4 @@
+#include <Arduino.h>
 #include <Servo.h>
 #define pinhome 13 // posisi awal
 #define pinwork 12 // mode kerja
