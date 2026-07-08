@@ -235,7 +235,7 @@ void ik_task(float x, float y, float z_target, float phi_deg,
   float theta0_deg = theta0 * 180.0 / PI;
   
   // ===== Wrist rotation (kompensasi) =====
-  // menjaga agar gripper tetap menghadap arah global
+  // menjaga agar gripper menyesuaikan arah base
   float theta4_deg = theta0_deg;
   
   // ===== Transformasi ke plane =====
