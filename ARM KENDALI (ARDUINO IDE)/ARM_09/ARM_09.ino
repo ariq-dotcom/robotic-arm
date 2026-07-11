@@ -158,7 +158,6 @@ void loop() {
 //############################
 //############################
 //========== KERJA ===========
-
     case KERJA: {
       // Program kerja
       tugasSelesai = false;
@@ -167,7 +166,8 @@ void loop() {
 
       if (!tunggu(100))
     break;
-    
+      
+      // x,y,z,phi,delayStep
       gerakKe(-0.7, 10, 0, -90, 7);
       Serial.print("Jarak: ");
       Serial.print(jarak);
@@ -192,7 +192,6 @@ void loop() {
         if (!tunggu(1000))
       break;
 
-
         //+8 cm adalah jarak awal persis depan sensor, 
         //dihitung dari titik pusat invers kinematik ke sensor
         //lalu + setelahnya untuk offset seberapa panjang lebar objek yang diambil
@@ -201,15 +200,12 @@ void loop() {
         gerakKe(-0.7, 8+jarak +1, 0, -90, 7);
         if (!tunggu(1000))
       break;
-
         gerakKe(-0.7, 8+jarak +1, -5, -90, 7);
         if (!tunggu(1000))
       break;
-
         gripper.write(95);
         if (!tunggu(1000))
       break;
-
         gerakKe(-0.7, 8+jarak +1, 0, -90, 7);
         if (!tunggu(1000))
       break;
@@ -218,15 +214,12 @@ void loop() {
         gerakKe(-13, 0, 0, -90, 7);
         if (!tunggu(1000))
       break;
-
         gerakKe(-13, 0, -5, -90, 7);
         if (!tunggu(1000))
       break;
-
         gripper.write(25);
         if (!tunggu(2000))
       break;
-
         gerakKe(-13, 7, -5, -90, 10);
         if (!tunggu(500))
       break;
@@ -240,7 +233,6 @@ void loop() {
 //############################
 //############################
 //========== DEMO ===========
-
     case DEMO: {
       // Program demo
       tugasSelesai = false;
@@ -299,11 +291,9 @@ void loop() {
       break;
     }
   }
-
 //============================
 //############################
-
-
+  
     if (tugasSelesai && modeDiminta != modeSekarang) {
       modeSekarang = modeDiminta;
       updateLED();
@@ -325,19 +315,17 @@ void loop() {
       }
     }
 }
-
 //AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 //AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 
 //################################################################
 // FUNGSI IK, FUNGSI IK, FUNGSI IK
 //################################################################
-
 // ==== FUNGSI IK ====
 bool ik_task(float x, float y, float z_target, float phi_deg,
                       float *t0_deg, float *t1_deg, float *t2_deg, 
                       float *t3_deg, float *t4_deg) {
-  
+
   // ===== Base rotation =====
   float theta0 = atan2(y, x);
   float theta0_deg = theta0 * 180.0 / PI;
